@@ -1,5 +1,5 @@
 let imagemAtual = 1;
-const totalImagens = 7;
+const totalImagens = 12;
 
 function anterior() {
     if (imagemAtual > 1) {
