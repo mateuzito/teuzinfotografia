@@ -1,3 +1,22 @@
+document.onreadystatechange = function() {
+    if (document.readyState === "complete") {
+
+document.getElementById("loading-overlay").style.display = 'none';        
+    }
+};
+
+function showLoading() {
+
+document.getElementById("loading-overlay").style.display = 'flex';
+    document.body.classList.add("loading"); 
+}
+
+function hideLoading() {
+
+document.getElementById("loading-overlay").style.display = "none";
+    document.body.classList.remove("loading");    
+}
+
 let imagemAtual = 1;
 const totalImagens = 12;
 
