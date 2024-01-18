@@ -83,12 +83,14 @@
         box-shadow: 0 0 10px #cdc9c9;
         margin-bottom: 70px;
         animation: background;
+        transition: transform 0.1s;
     }
 
     /* Button animation for mobile devices */
     button:active {
         background: #33333300;
         transition: 0.1s;
+        transform: scale(0.98);
     }
 
     footer {
@@ -131,12 +133,14 @@
         box-shadow: 0 0 10px #cdc9c9;
         margin-bottom: 70px;
         animation: background;
+        transition: transform 1s;
     }
 
     /* Button animation for computers */
     button:hover {
         background: #3333339e;
         transition: 1s;
+        transform: scale(0.98);
     }
 
     footer {
