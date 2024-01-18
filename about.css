@@ -82,7 +82,13 @@
         width: 44%;
         box-shadow: 0 0 10px #cdc9c9;
         margin-bottom: 70px;
-        cursor: pointer;
+        animation: background;
+    }
+
+    /* Button animation for mobile devices */
+    button:active {
+        background: #3333339e;
+        transition: 0.5s;
     }
 
     main {
@@ -133,7 +139,13 @@
         width: 25%;
         box-shadow: 0 0 10px #cdc9c9;
         margin-bottom: 70px;
-        cursor: pointer;
+        animation: background;
+    }
+
+    /* Button animation for computers */
+    button:hover {
+        background: #3333339e;
+        transition: 1s;
     }
 
     main {
