@@ -82,6 +82,7 @@
         width: 44%;
         box-shadow: 0 0 10px #cdc9c9;
         margin-bottom: 70px;
+        cursor: pointer;
     }
     
     img {
@@ -104,6 +105,7 @@
         width: 43%;
         box-shadow: 0 0 10px #cdc9c9;
         margin-bottom: 70px;
+        cursor: pointer;
     }
 
     footer {
@@ -145,6 +147,7 @@
         width: 25%;
         box-shadow: 0 0 10px #cdc9c9;
         margin-bottom: 70px;
+        cursor: pointer;
     }
     
     img {
@@ -167,6 +170,7 @@
         width: 25%;
         box-shadow: 0 0 10px #cdc9c9;
         margin-bottom: 70px;
+        cursor: pointer;
     }
 
     footer {
