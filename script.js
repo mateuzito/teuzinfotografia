@@ -38,3 +38,17 @@ document.getElementById('redirecionarSobre').addEventListener('click', function(
 document.getElementById('redirecionarRedesSociais').addEventListener('click', function() {
     window.location.href = 'socialmedia.html';
 });
+
+function toggleNav() {
+    var navContent =
+document.querySelector('.nav-content');
+    navContent.style.display =
+(navContent.style.display === 'none' ||
+getComputedStyle(navContent).display === 'none') ? 'flex' : 'none';  
+}
+
+function closeNav() {
+    var navContent =
+document.querySelector('.nav-content');
+    navContent.style.display = 'none';
+}
