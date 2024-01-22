@@ -222,119 +222,6 @@
     }
 }
 
-h1 {
-    height: 40px;
-}
-
-.menu-btn {
-    cursor: pointer;
-    display: none;
-    width: 10px;
-}
-
-.bar {
-    width: 15px;
-    height: 5px;
-    background-color: white;
-    margin: 5px 0;
-}
-
-.nav-content {
-    display: none;
-    flex-direction: column;
-}
-
-@media screen and (max-width: 768px) {
-    .menu-btn {
-        display: block;
-        margin-left: 20px;
-    }
-
-    .nav-content {
-        position: absolute;
-        top: 10px;
-        left: 0;
-        background-color: #474242;
-        height: 35%;
-        width: 50%;
-        display: none;
-        flex-direction: column;
-        box-shadow: 0 0 0 1px #cdc9c9;
-    }
-
-    .close-btn {
-        margin-left: 85%;
-        font-size: 40px;
-        padding: 0;
-        width: 0;
-        cursor: pointer;
-    
-    }
-
-    .nav-content p {
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: auto;
-        margin-bottom: 10px;
-        text-align: left;
-    }
-
-    .nav-content a {
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: auto;
-        margin-bottom: 10px;
-        text-align: left;
-        color: white;
-    }
-}
-
-@media screen and (min-width: 769px) {
-    .menu-btn {
-        display: block;
-        margin-left: 20px;
-    }
-
-    .nav-content {
-        position: absolute;
-        top: 10px;
-        left: 0;
-        background-color: #474242;
-        height: 50%;
-        width: 50%;
-        display: none;
-        flex-direction: column;
-        box-shadow: 0 0 0 1px #cdc9c9;
-    }
-
-    .close-btn {
-        margin-top: 10px;
-        margin-left: 92%;
-        font-size: 40px;
-        padding: 0;
-        width: 0;
-        cursor: pointer;
-    
-    }
-
-    .nav-content p {
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: auto;
-        margin-bottom: 10px;
-        text-align: left;
-    }
-
-    .nav-content a {
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: auto;
-        margin-bottom: 10px;
-        text-align: left;
-        color: white;
-    }
-}
-  
 nav {
     padding: 5px;
     text-align: center;
@@ -353,6 +240,11 @@ nav {
 
 #imagem1 {
     display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #6f6969;
 }
 
 /* Image animation */

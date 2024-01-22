@@ -182,3 +182,8 @@ img {
     border-radius: 50%;
     user-select: none;
 }
+
+a {
+    text-decoration: none;
+    color: #6f6969;
+}

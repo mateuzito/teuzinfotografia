@@ -176,6 +176,7 @@
     }
 }
 
+/* Website content */
 nav {
     padding: 5px;
     text-align: center;
@@ -199,6 +200,11 @@ h2 {
     text-align: center;
     color: #181111;
     user-select: none;
+}
+
+a {
+    color: #6f6969;
+    text-decoration: none;
 }
 
 p {
