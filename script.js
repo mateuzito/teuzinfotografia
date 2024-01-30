@@ -38,3 +38,13 @@ document.getElementById('redirecionarSobre').addEventListener('click', function(
 document.getElementById('redirecionarRedesSociais').addEventListener('click', function() {
     window.location.href = 'socialmedia.html';
 });
+
+function toggleNav() {
+
+document.querySelector('.sidebar').classList.toggle('open');    
+}
+
+function closeNav() {
+
+document.querySelector('.sidebar').classList.remove('open');    
+}

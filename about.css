@@ -62,35 +62,65 @@
     header {
         background-color:#333;
         color: #fff;
-        text-align: center;
-        padding: 1em 0;
-        border-radius: 30px;
-        width: 88%;
-        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         box-shadow: 0  0 10px #cdc9c9;
-        margin-top: 10px;
         user-select: none;
+        -webkit-user-select: none;
     }
 
-    button {
-        background-color: #333;
-        color:#fff;
-        text-align: center;
-        padding: 1em 0;
-        border-radius: 30px;
-        border: 10px;
-        width: 44%;
-        box-shadow: 0 0 10px #cdc9c9;
-        margin-bottom: 70px;
-        animation: background;
-        transition: transform 0.1s;
+    button.menu-btn {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 20px;
     }
 
-    /* Button animation for mobile devices */
-    button:active {
-        background: #33333300;
-        transition: 0.1s;
-        transform: scale(0.98);
+    .sidebar {
+        width: 250px;
+        height: 100%;
+        background-color: #222;
+        position: fixed;
+        top: 0;
+        right: -260px;
+        transition: right 0.3s ease;
+    }
+
+    .sidebar.open {
+        right: 0;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 10px;
+        text-align: left;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    nav ul .align-left {
+        padding: 10px;
+        text-align: left;
+    }
+
+    nav ul p {
+        color: #fff;
+        margin-top: 50%;
+        margin-bottom: -10%;
+    }
+
+    nav ul .p1 {
+        color: #fff;
+        margin-top: 15%;
     }
 
     main {
@@ -105,15 +135,13 @@
     footer {
         background-color: #333;
         color: #fff;
-        text-align: center;
-        padding: 1em 0;
-        border-radius: 30px;
-        width: 88%;
-        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         box-shadow: 0 0 10px #cdc9c9;
-        margin-top: 100px;
-        margin-bottom: 10px;
         user-select: none;
+        -webkit-user-select: none;
     }
 }
 
@@ -177,17 +205,13 @@
 }
 
 /* Website content */
-nav {
-    padding: 5px;
-    text-align: center;
-}
-
 img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     box-shadow: 0 0 10px #cdc9c9;
     user-select: none;
+    margin-top: 100px;
 }
 
 .center {
@@ -200,6 +224,11 @@ h2 {
     text-align: center;
     color: #181111;
     user-select: none;
+}
+
+p.text {
+    user-select: none;
+    margin-bottom: 150px;
 }
 
 a {

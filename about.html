@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +11,25 @@ type="image/x-icon">
 <body>
     <header>
         <h1>Sobre</h1>
+        <button class="menu-btn" onclick="toggleNav()">&#9776;</button>
     </header>
 
-    <nav>
-        <button id="redirecionarInicio">Início</button>
-        <button id="redirecionarRedesSociais">Redes Sociais</button>
+    <nav class="sidebar" onclick="closeNav()">
+        <ul>
+            <li>
+                <a href="index.html">Início</a>
+            </li>
+            <li>
+                <a href="about.html">Sobre</a>
+            </li>
+            <li>
+                <a href="socialmedia.html">Redes Sociais</a>
+            </li>
+            <div class="align-left">
+                <p>Developed by <a href="https://github.com/MateusZitoDev" target="_blank">Mateus Silva</a></p>
+                <p class="p1">Versão: 1.1</p>
+            </div>
+        </ul>
     </nav>
 
     <div class="center">
@@ -26,18 +40,12 @@ type="image/x-icon">
     
     <main>
         <section>
-            <p>Meu nome é Mateus, também chamado de Teuzin.
-               Sou um Fotógrafo Amador, gosto de fotografar
-               a natureza e animais. Comecei a gostar da
-               fotografia quando eu tinha 12 anos de idade,
-               tirei uma foto de paisagem, editei ela e gostei
-               do resultado, e disse: Fotografar Paisagens vai ser o meu Hobby!
-            </p>
+            <p class="text">Meu nome é Mateus, também chamado de Teuzin. Sou um Fotógrafo Amador, gosto de fotografar a natureza e animais. Comecei a gostar da fotografia quando eu tinha 12 anos de idade, tirei uma foto de paisagem, editei ela e gostei do resultado, e disse: Fotografar Paisagens vai ser o meu Hobby!</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Teuzin Fotografia. Todos os direitos reservados. Developed by <a href="https://github.com/MateusZitoDev" target="_blank">Mateus Silva</a></p>
+        <p>&copy; 2024 Teuzin Fotografia. Todos os direitos reservados.</p>
     </footer>
 
     <script src="about.js"></script>

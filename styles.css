@@ -3,7 +3,6 @@
         font-size: 18px;
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
-        padding: 0;
         background-color: #4b4747;
     }
 }
@@ -13,7 +12,6 @@
         font-size: 20px;
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
-        padding: 0;
         background-color: #4b4747;
     }
 }
@@ -23,7 +21,6 @@
         font-size: 22px;
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
-        padding: 0;
         background-color: #4b4747;
     }
 }
@@ -33,7 +30,6 @@
         font-size: 24px;
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
-        padding: 0;
         background-color: #4b4747;
     }
 }
@@ -43,7 +39,6 @@
         font-size: 18px;
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
-        padding: 0;
         background-color: #4b4747;
     }
 }
@@ -53,7 +48,6 @@
         font-size: 20px;
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
-        padding: 0;
         background-color: #4b4747;
     }
 }
@@ -62,35 +56,65 @@
     header {
         background-color:#333;
         color: #fff;
-        text-align: center;
-        padding: 1em 0;
-        border-radius: 30px;
-        width: 88%;
-        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         box-shadow: 0  0 10px #cdc9c9;
-        margin-top: 10px;
         user-select: none;
+        -webkit-user-select: none;
     }
 
-    button {
-        background-color: #333;
-        color:#fff;
-        text-align: center;
-        padding: 1em 0;
-        border-radius: 30px;
-        border: 10px;
-        width: 44%;
-        box-shadow: 0 0 10px #cdc9c9;
-        margin-bottom: 70px;
-        animation: background;
-        transition: transform 0.1s;
+    button.menu-btn {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 20px;
     }
 
-    /* Button animation for mobile devices */
-    button:active {
-        background: #33333300;
-        transition: 0.1s;
-        transform: scale(0.98);
+    .sidebar {
+        width: 250px;
+        height: 100%;
+        background-color: #222;
+        position: fixed;
+        top: 0;
+        right: -260px;
+        transition: right 0.3s ease;
+    }
+
+    .sidebar.open {
+        right: 0;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 10px;
+        text-align: left;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    nav ul .align-left {
+        padding: 10px;
+        text-align: left;
+    }
+
+    nav ul p {
+        color: #fff;
+        margin-top: 50%;
+        margin-bottom: -10%;
+    }
+
+    nav ul .p1 {
+        color: #fff;
+        margin-top: 15%;
     }
 
     img {
@@ -98,9 +122,10 @@
         width: 88%;
         border-radius: 30px;
         margin: 0 auto;
-        margin-top: 50px;
+        margin-top: 160px;
         margin-bottom: 25px;
         user-select: none;
+        -webkit-user-select: none;
         animation: fade-in 1s ease-out;
     }
 
@@ -113,7 +138,7 @@
         border: 10px;
         width: 43%;
         box-shadow: 0 0 10px #cdc9c9;
-        margin-bottom: 70px;
+        margin-bottom: 160px;
         animation: background;
         transition: transform 0.1s;
     }
@@ -128,15 +153,13 @@
     footer {
         background-color: #333;
         color: #fff;
-        text-align: center;
-        padding: 1em 0;
-        border-radius: 30px;
-        width: 88%;
-        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         box-shadow: 0 0 10px #cdc9c9;
-        margin-top: 70px;
-        margin-bottom: 10px;
         user-select: none;
+        -webkit-user-select: none;
     }
 }
 
@@ -152,6 +175,7 @@
         box-shadow: 0  0 10px #cdc9c9;
         margin-top: 10px;
         user-select: none;
+        -webkit-user-select: none;
     }
 
     button {
@@ -183,6 +207,7 @@
         margin-top: 50px;
         margin-bottom: 25px;
         user-select: none;
+        -webkit-user-select: none;
         animation: fade-in 1s ease-out;
     }
 
@@ -216,9 +241,9 @@
         width: 50%;
         margin: 0 auto;
         box-shadow: 0 0 10px #cdc9c9;
-        margin-top: 70px;
         margin-bottom: 10px;
         user-select: none;
+        -webkit-user-select: none;
     }
 }
 
@@ -233,7 +258,7 @@ nav {
 }
 
 .carousel {
-    display: inline-block;
+    display: flex;
     overflow: visible;
     flex: 1;
 }

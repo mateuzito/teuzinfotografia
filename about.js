@@ -1,7 +1,9 @@
-document.getElementById('redirecionarInicio').addEventListener('click', function() {
-    window.location.href = 'index.html';
-});
+function toggleNav() {
 
-document.getElementById('redirecionarRedesSociais').addEventListener('click', function() {
-    window.location.href = 'socialmedia.html';
-});
+document.querySelector('.sidebar').classList.toggle('open');    
+}
+    
+function closeNav() {
+    
+document.querySelector('.sidebar').classList.remove('open');    
+}
