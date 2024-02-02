@@ -1,3 +1,15 @@
+/* Sidebar function */
+function toggleNav() {
+
+document.querySelector('.sidebar').classList.toggle('open');    
+}
+    
+function closeNav() {
+    
+document.querySelector('.sidebar').classList.remove('open');    
+}
+
+/* Image display function */
 let imagemAtual = 1;
 const totalImagens = 14;
 
@@ -29,22 +41,4 @@ document.getElementById('imagem' + i);
             imagem.style.display = 'none';
         }  
     }
-}
-
-document.getElementById('redirecionarSobre').addEventListener('click', function() {
-    window.location.href = 'about.html';
-});
-
-document.getElementById('redirecionarRedesSociais').addEventListener('click', function() {
-    window.location.href = 'socialmedia.html';
-});
-
-function toggleNav() {
-
-document.querySelector('.sidebar').classList.toggle('open');    
-}
-
-function closeNav() {
-
-document.querySelector('.sidebar').classList.remove('open');    
 }
