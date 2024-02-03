@@ -68,7 +68,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        box-shadow: 0  0 10px #cdc9c9;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
         user-select: none;
         -webkit-user-select: none;
     }
@@ -84,10 +84,11 @@
         width: 250px;
         height: 100%;
         background-color: #222;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         position: fixed;
         top: 0;
         right: -260px;
-        transition: right 0.3s ease;
+        transition: right 0.5s ease;
     }
 
     .sidebar.open {
@@ -116,13 +117,10 @@
 
     nav ul p {
         color: #fff;
-        margin-top: 50%;
-        margin-bottom: -10%;
-    }
-
-    nav ul .p1 {
-        color: #fff;
-        margin-top: 15%;
+        font-size: 15px;
+        position: absolute;
+        margin: 0;
+        bottom: 20px;
     }
 
     .center {
@@ -135,7 +133,7 @@
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        box-shadow: 0 0 10px #cdc9c9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         user-select: none;
         margin-top: 100px;
     }
@@ -161,7 +159,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 0 10px #cdc9c9;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
         user-select: none;
         -webkit-user-select: none;
     }
@@ -176,7 +174,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        box-shadow: 0  0 10px #cdc9c9;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
         user-select: none;
         -webkit-user-select: none;
     }
@@ -192,10 +190,11 @@
         width: 250px;
         height: 100%;
         background-color: #222;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         position: fixed;
         top: 0;
         right: -260px;
-        transition: right 0.3s ease;
+        transition: right 0.5s ease;
     }
 
     .sidebar.open {
@@ -224,13 +223,10 @@
 
     nav ul p {
         color: #fff;
-        margin-top: 50%;
-        margin-bottom: -10%;
-    }
-
-    nav ul .p1 {
-        color: #fff;
-        margin-top: 15%;
+        font-size: 15px;
+        position: absolute;
+        margin: 0;
+        bottom: 20px;
     }
 
     .center {
@@ -242,7 +238,7 @@
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        box-shadow: 0 0 10px #cdc9c9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         user-select: none;
         margin-top: 50px;
     }
@@ -268,7 +264,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 0 10px #cdc9c9;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
         user-select: none;
         -webkit-user-select: none;
     }
