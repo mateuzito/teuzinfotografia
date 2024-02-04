@@ -11,7 +11,7 @@ document.querySelector('.sidebar').classList.remove('open');
 
 /* Image display function */
 let imagemAtual = 1;
-const totalImagens = 14;
+const totalImagens = 16;
 
 function anterior() {
     if (imagemAtual > 1) {
