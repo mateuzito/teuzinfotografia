@@ -72,6 +72,11 @@
         border: none;
         color: #fff;
         font-size: 20px;
+        transition: transform 0.1s ease-in-out;
+    }
+
+    .rotacionado {
+        transform: rotate(90deg);
     }
 
     .sidebar {
@@ -183,8 +188,13 @@
         border: none;
         color: #fff;
         font-size: 20px;
+        transition: transform 0.1s ease-in-out;
     }
 
+    .rotacionado {
+        transform: rotate(90deg);
+    }
+    
     .sidebar {
         width: 250px;
         height: 100%;
