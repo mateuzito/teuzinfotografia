@@ -9,6 +9,7 @@ function closeNav() {
 document.querySelector('.sidebar').classList.remove('open');    
 }
 
+/* Sidebar button rotation function */
 var botoes =
 document.querySelectorAll(".menu-btn");
 

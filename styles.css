@@ -75,6 +75,7 @@
         transition: transform 0.1s ease-in-out;
     }
 
+    /* Sidebar button rotation animation */
     .rotacionado {
         transform: rotate(90deg);
     }
@@ -135,7 +136,7 @@
         animation: fade-in 1s ease-out;
     }
 
-    .button2 {
+    .button1 {
         background-color: #555;
         color:#fff;
         text-align: center;
@@ -150,7 +151,7 @@
     }
 
     /* Button animation for mobile devices */
-    .button2:active {
+    .button1:active {
         background: #777;
         transition: 0.1s;
         transform: scale(0.98);
@@ -191,6 +192,7 @@
         transition: transform 0.1s ease-in-out;
     }
 
+    /* Sidebar button rotation animation */
     .rotacionado {
         transform: rotate(90deg);
     }
@@ -251,7 +253,7 @@
         animation: fade-in 1s ease-out;
     }
 
-    .button2 {
+    .button1 {
         background-color: #555;
         color:#fff;
         text-align: center;
@@ -266,7 +268,7 @@
     }
 
     /* Button animation for computers */
-    .button2:hover {
+    .button1:hover {
         background: #777;
         transition: 1s;
         transform: scale(0.98);

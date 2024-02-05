@@ -81,6 +81,7 @@
         transition: transform 0.1s ease-in-out;
     }
 
+    /* Sidebar button rotation animation */
     .rotacionado {
         transform: rotate(90deg);
     }
@@ -192,6 +193,7 @@
         transition: transform 0.1s ease-in-out;
     }
 
+    /* Sidebar button rotation animation */
     .rotacionado {
         transform: rotate(90deg);
     }
