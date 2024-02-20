@@ -9,11 +9,6 @@ type="image/x-icon">
     <title>Teuzin Fotografia-Sobre</title>
 </head>
 <body>
-    <header>
-        <h1>Sobre</h1>
-        <button class="menu-btn" onclick="toggleNav()">&#9776;</button>
-    </header>
-
     <nav class="sidebar" onclick="closeNav()">
         <ul>
             <li>
@@ -31,21 +26,30 @@ type="image/x-icon">
         </ul>
     </nav>
 
-    <div class="center">
-        <img src="./images/Minha Foto.jpeg" oncontextmenu="return false"></img>
-    </div>
-
-    <h2>Teuzin Fotografia</h2>
+    <div class="content">
+        <header>
+            <h1>Sobre</h1>
+            <button class="menu-btn" onclick="toggleNav()">&#9776;</button>
+        </header>
     
-    <main>
-        <section>
-            <p class="text">Meu nome é Mateus, também chamado de Teuzin. Sou um Fotógrafo Amador, gosto de fotografar a natureza e animais. Comecei a gostar da fotografia quando eu tinha 12 anos de idade, tirei uma foto de paisagem, editei ela e gostei do resultado, e disse: Fotografar Paisagens vai ser o meu Hobby!</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Teuzin Fotografia. Todos os direitos reservados.</p>
-    </footer>
+        <div class="center">
+            <img src="./images/Minha Foto.jpeg" oncontextmenu="return false"></img>
+        </div>
+    
+        <h2>Teuzin Fotografia</h2>
+        
+        <main>
+            <section>
+                <p class="text">Meu nome é Mateus, também chamado de Teuzin. Sou um Fotógrafo Amador, gosto de fotografar a natureza e animais. Comecei a gostar da fotografia quando eu tinha 12 anos de idade, tirei uma foto de paisagem, editei ela e gostei do resultado, e disse: Fotografar Paisagens vai ser o meu Hobby!</p>
+            </section>
+        </main>
+    
+        <footer>
+            <p>&copy; 2024 Teuzin Fotografia. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    
+    <div class="overlay"></div>
 
     <script src="about.js"></script>
 </body>

@@ -1,13 +1,45 @@
 /* Sidebar function */
-function toggleNav() {
+document.addEventListener('DOMContentLoaded', function() {
+    var sidebars = document.querySelectorAll('.sidebar');
+    var overlays = document.querySelectorAll('.overlay');
+    var menuBtns = document.querySelectorAll('.menu-btn');
 
-document.querySelector('.sidebar').classList.toggle('open');    
-}
-    
-function closeNav() {
-    
-document.querySelector('.sidebar').classList.remove('open');    
-}
+    function openSidebar() {
+        sidebars.forEach(function(sidebar) {
+            sidebar.style.right = '0';
+        });
+        overlays.forEach(function(overlay) {
+            overlay.style.display = 'block';
+        });
+    }
+
+    function closeSidebar() {
+        sidebars.forEach(function(sidebar) {
+            sidebar.style.right = '-80%';
+        });
+        overlays.forEach(function(overlay) {
+            overlay.style.display = 'none';
+        });
+    }
+
+    function toggleSidebar() {
+        sidebars.forEach(function(sidebar) {
+            if (sidebar.style.right === '0px') {
+                closeSidebar();
+            } else {
+                openSidebar();
+            }
+        });
+    }
+
+    menuBtns.forEach(function(menuBtn) {
+        menuBtn.addEventListener('click', toggleSidebar);
+    });
+
+    overlays.forEach(function(overlay) {
+        overlay.addEventListener('click', closeSidebar);
+    });
+});
 
 /* Sidebar button rotation function */
 var botoes =
