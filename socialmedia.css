@@ -135,6 +135,7 @@
 
     nav ul li a {
         color: #fff;
+        font-family: "Lato", sans-serif;
         text-decoration: none;
     }
 
@@ -145,10 +146,12 @@
 
     nav ul p {
         color: #fff;
+        font-family: "Roboto", sans-serif;
         font-size: 15px;
         position: absolute;
         margin: 0;
         bottom: 30px;
+        user-select: none;
     }
 
     .center {
@@ -247,6 +250,7 @@
 
     nav ul li a {
         color: #fff;
+        font-family: "Lato", sans-serif;
         text-decoration: none;
     }
 
@@ -257,10 +261,12 @@
 
     nav ul p {
         color: #fff;
+        font-family: "Roboto", sans-serif;
         font-size: 15px;
         position: absolute;
         margin: 0;
         bottom: 30px;
+        user-select: none;
     }
     
     .center {
@@ -284,14 +290,14 @@
 }
 
 /* Website content */
-nav {
-    padding: 5px;
-    text-align: center;
+h1 {
+    font-family: "Playfair Display", serif;
 }
 
 h2 {
+    color: #d3d3d3;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
-    color: #181111;
     user-select: none;
 }
 
@@ -303,13 +309,13 @@ img {
     user-select: none;
 }
 
-/* Developer link color */
-a {
-    text-decoration: none;
-    color: #6f6969;
+p.footer {
+    font-family: "Roboto", sans-serif;
 }
 
-/* Sidebar paragraph */
-p {
-    user-select: none;
+/* Developer link color */
+a {
+    color: #6f6969;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
 }

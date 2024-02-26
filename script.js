@@ -55,6 +55,23 @@ botoes.forEach(function(botao) {
     });
 });
 
+/* Photo of the day function */
+function showDailyImage() {
+    const images = document.querySelectorAll('.dailyImage');
+    const today = new Date();
+    const startOfYear = new Date(today.getFullYear(), 0, 0);
+    const diff = today - startOfYear;
+    const oneDay = 1000 * 60 * 60 * 24;
+    const dayOfYear = Math.floor(diff / oneDay);
+
+    const imageIndex = dayOfYear % images.length;
+    images.forEach((img, index) => {
+        img.style.display = index === imageIndex ? 'block' : 'none';
+    });
+}
+
+window.onload = showDailyImage;
+
 /* Image display function */
 let imagemAtual = 1;
 const totalImagens = 16;

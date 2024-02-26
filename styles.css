@@ -129,6 +129,7 @@
 
     nav ul li a {
         color: #fff;
+        font-family: "Lato", sans-serif;
         text-decoration: none;
     }
 
@@ -139,10 +140,25 @@
 
     nav ul p {
         color: #fff;
+        font-family: "Roboto", sans-serif;
         font-size: 15px;
         position: absolute;
         margin: 0;
         bottom: 30px;
+        user-select: none;
+    }
+
+    img.dailyImage {
+        display: none;
+        width: 88%;
+        border-radius: 30px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 150px;
+        user-select: none;
+        -webkit-user-select: none;
+        animation: fade-in 1s ease-out;
     }
 
     img {
@@ -151,7 +167,7 @@
         border-radius: 30px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         margin: 0 auto;
-        margin-top: 160px;
+        margin-top: 50px;
         margin-bottom: 25px;
         user-select: none;
         -webkit-user-select: none;
@@ -161,13 +177,14 @@
     .button1 {
         background-color: #555;
         color:#fff;
+        font-family: "Montserrat", sans-serif;
         text-align: center;
         padding: 1em 0;
         border-radius: 30px;
         border: 10px;
         width: 43%;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        margin-bottom: 160px;
+        margin-bottom: 40px;
         animation: background;
         transition: transform 0.1s;
     }
@@ -268,6 +285,7 @@
 
     nav ul li a {
         color: #fff;
+        font-family: "Lato", sans-serif;
         text-decoration: none;
     }
 
@@ -278,10 +296,25 @@
 
     nav ul p {
         color: #fff;
+        font-family: "Roboto", sans-serif;
         font-size: 15px;
         position: absolute;
         margin: 0;
         bottom: 30px;
+        user-select: none;
+    }
+
+    img.dailyImage {
+        display: none;
+        width: 50%;
+        border-radius: 30px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 150px;
+        user-select: none;
+        -webkit-user-select: none;
+        animation: fade-in 1s ease-out;
     }
 
     img {
@@ -300,6 +333,7 @@
     .button1 {
         background-color: #555;
         color:#fff;
+        font-family: "Montserrat", sans-serif;
         text-align: center;
         padding: 1em 0;
         border-radius: 30px;
@@ -332,9 +366,19 @@
 }
 
 /* Website content */
-nav {
-    padding: 5px;
+h1 {
+    font-family: "Playfair Display", serif;
+}
+
+h2 {
+    color: #d3d3d3;
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
     text-align: center;
+}
+
+p.footer {
+    font-family: "Roboto", sans-serif;
 }
 
 .gallery {
@@ -342,10 +386,14 @@ nav {
     margin: 1em 0;
 }
 
-.carousel {
-    display: flex;
+.emphasis {
+    display: block;
     overflow: visible;
-    flex: 1;
+}
+
+.carousel {
+    display: block;
+    overflow: visible;
 }
 
 /* Initial image */
@@ -355,13 +403,9 @@ nav {
 
 /* Developer link color */
 a {
-    text-decoration: none;
     color: #6f6969;
-}
-
-/* Sidebar paragraph */
-p {
-    user-select: none;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
 }
 
 /* Image animation */
