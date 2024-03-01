@@ -181,7 +181,7 @@
         font-family: "Lato", sans-serif;
         user-select: none;
         margin-bottom: 150px;
-        letter-spacing: 1px;
+        word-spacing: 1px;
     }
 
     footer {
