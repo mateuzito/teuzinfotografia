@@ -63,7 +63,6 @@
 @media (max-width: 768px) {
     header {
         background-color:#333;
-        color: #fff;
         padding: 10px;
         display: flex;
         justify-content: space-between;
@@ -76,7 +75,7 @@
     button.menu-btn {
         background: none;
         border: none;
-        color: #fff;
+        color: #cccccc;
         font-size: 20px;
         transition: transform 0.1s ease-in-out;
     }
@@ -134,7 +133,7 @@
     }
 
     nav ul li a {
-        color: #fff;
+        color: #0096ff;
         font-family: "Lato", sans-serif;
         text-decoration: none;
     }
@@ -145,7 +144,7 @@
     }
 
     nav ul p {
-        color: #fff;
+        color: #dddddd;
         font-family: "Roboto", sans-serif;
         font-size: 15px;
         position: absolute;
@@ -164,7 +163,7 @@
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         user-select: none;
         margin-top: 100px;
     }
@@ -178,15 +177,15 @@
     }
 
     p.text {
-        color: #fff;
+        color: #bcbcbc;
         font-family: "Lato", sans-serif;
         user-select: none;
         margin-bottom: 150px;
+        letter-spacing: 1px;
     }
 
     footer {
         background-color: #333;
-        color: #fff;
         padding: 10px;
         display: flex;
         justify-content: center;
@@ -201,7 +200,6 @@
 @media (min-width: 769px) {
     header {
         background-color:#333;
-        color: #fff;
         padding: 10px;
         display: flex;
         justify-content: space-between;
@@ -214,7 +212,7 @@
     button.menu-btn {
         background: none;
         border: none;
-        color: #fff;
+        color: #cccccc;
         font-size: 20px;
         transition: transform 0.3s ease-in-out;
     }
@@ -272,7 +270,7 @@
     }
 
     nav ul li a {
-        color: #fff;
+        color: #0096ff;
         font-family: "Lato", sans-serif;
         text-decoration: none;
     }
@@ -283,7 +281,7 @@
     }
 
     nav ul p {
-        color: #fff;
+        color: #dddddd;
         font-family: "Roboto", sans-serif;
         font-size: 15px;
         position: absolute;
@@ -294,14 +292,15 @@
 
     .center {
         text-align: center;
-        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-bottom: 10px;
     }
 
     img {
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         user-select: none;
         margin-top: 50px;
     }
@@ -310,20 +309,19 @@
         text-align: justify;
         margin: 0 auto;
         margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 150px;
         width: 50%;
     }
 
     p.text {
-        color: #fff;
+        color: #bcbcbc;
         font-family: "Lato", sans-serif;
         user-select: none;
-        margin-bottom: 50px;
+        letter-spacing: 1px;
     }
 
     footer {
         background-color: #333;
-        color: #fff;
         padding: 10px;
         display: flex;
         justify-content: center;
@@ -336,17 +334,19 @@
 
 /* Website content */
 h1 {
+    color: #a8a8a8;
     font-family: "Playfair Display", serif;
 }
 
 h2 {
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
     color: #d3d3d3;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
     user-select: none;
 }
 
 p.footer {
+    color: #cccccc;
     font-family: "Roboto", sans-serif;
 }
 

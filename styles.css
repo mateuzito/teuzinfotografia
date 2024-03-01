@@ -57,7 +57,6 @@
 @media (max-width: 768px) {
     header {
         background-color:#333;
-        color: #fff;
         padding: 10px;
         display: flex;
         justify-content: space-between;
@@ -70,7 +69,7 @@
     button.menu-btn {
         background: none;
         border: none;
-        color: #fff;
+        color: #cccccc;
         font-size: 20px;
         transition: transform 0.1s ease-in-out;
     }
@@ -128,7 +127,7 @@
     }
 
     nav ul li a {
-        color: #fff;
+        color: #0096ff;
         font-family: "Lato", sans-serif;
         text-decoration: none;
     }
@@ -139,7 +138,7 @@
     }
 
     nav ul p {
-        color: #fff;
+        color: #dddddd;
         font-family: "Roboto", sans-serif;
         font-size: 15px;
         position: absolute;
@@ -152,7 +151,7 @@
         display: none;
         width: 88%;
         border-radius: 30px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
         margin: 0 auto;
         margin-top: 50px;
         margin-bottom: 150px;
@@ -165,7 +164,7 @@
         display: none;
         width: 88%;
         border-radius: 30px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
         margin: 0 auto;
         margin-top: 50px;
         margin-bottom: 25px;
@@ -176,7 +175,7 @@
 
     .button1 {
         background-color: #555;
-        color:#fff;
+        color:#ffffff;
         font-family: "Montserrat", sans-serif;
         text-align: center;
         padding: 1em 0;
@@ -198,7 +197,6 @@
 
     footer {
         background-color: #333;
-        color: #fff;
         padding: 10px;
         display: flex;
         justify-content: center;
@@ -213,7 +211,6 @@
 @media (min-width: 769px) {
     header {
         background-color:#333;
-        color: #fff;
         padding: 10px;
         display: flex;
         justify-content: space-between;
@@ -226,7 +223,7 @@
     button.menu-btn {
         background: none;
         border: none;
-        color: #fff;
+        color: #cccccc;
         font-size: 20px;
         transition: transform 0.3s ease-in-out;
     }
@@ -284,7 +281,7 @@
     }
 
     nav ul li a {
-        color: #fff;
+        color: #0096ff;
         font-family: "Lato", sans-serif;
         text-decoration: none;
     }
@@ -295,7 +292,7 @@
     }
 
     nav ul p {
-        color: #fff;
+        color: #dddddd;
         font-family: "Roboto", sans-serif;
         font-size: 15px;
         position: absolute;
@@ -308,7 +305,7 @@
         display: none;
         width: 50%;
         border-radius: 30px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
         margin: 0 auto;
         margin-top: 50px;
         margin-bottom: 150px;
@@ -321,7 +318,7 @@
         display: none;
         width: 50%;
         border-radius: 30px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
         margin: 0 auto;
         margin-top: 50px;
         margin-bottom: 25px;
@@ -332,7 +329,7 @@
 
     .button1 {
         background-color: #555;
-        color:#fff;
+        color:#ffffff;
         font-family: "Montserrat", sans-serif;
         text-align: center;
         padding: 1em 0;
@@ -354,7 +351,6 @@
 
     footer {
         background-color: #333;
-        color: #fff;
         padding: 10px;
         display: flex;
         justify-content: center;
@@ -367,17 +363,26 @@
 
 /* Website content */
 h1 {
+    color: #a8a8a8;
     font-family: "Playfair Display", serif;
 }
 
 h2 {
     color: #d3d3d3;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 50px;
-    text-align: center;
+    user-select: none;
+}
+
+h3 {
+    color: #bcbcbc;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    user-select: none;
 }
 
 p.footer {
+    color: #cccccc;
     font-family: "Roboto", sans-serif;
 }
 
