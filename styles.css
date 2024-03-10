@@ -147,47 +147,6 @@
         user-select: none;
     }
 
-    img.dailyImage {
-        display: none;
-        width: 88%;
-        border-radius: 30px;
-        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-        margin: 0 auto;
-        margin-top: 50px;
-        margin-bottom: 150px;
-        user-select: none;
-        -webkit-user-select: none;
-        animation: fade-in 1s ease-out;
-    }
-
-    img {
-        display: none;
-        width: 88%;
-        border-radius: 30px;
-        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-        margin: 0 auto;
-        margin-top: 50px;
-        margin-bottom: 25px;
-        user-select: none;
-        -webkit-user-select: none;
-        animation: fade-in 1s ease-out;
-    }
-
-    .button1 {
-        background-color: #555;
-        color:#ffffff;
-        font-family: "Montserrat", sans-serif;
-        text-align: center;
-        padding: 1em 0;
-        border-radius: 30px;
-        border: 10px;
-        width: 43%;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        margin-bottom: 40px;
-        animation: background;
-        transition: transform 0.1s;
-    }
-
     /* Button animation for mobile devices */
     .button1:active {
         background: #777;
@@ -301,9 +260,30 @@
         user-select: none;
     }
 
+    /* Button animation for computers */
+    .button1:hover {
+        background: #777;
+        transition: 1s;
+        transform: scale(0.98);
+    }
+
+    footer {
+        background-color: #333;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+        user-select: none;
+        -webkit-user-select: none;
+    }
+}
+
+/* Adaptation of images and buttons */
+@media (max-width: 999px) {
     img.dailyImage {
         display: none;
-        width: 50%;
+        width: 88%;
         border-radius: 30px;
         box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
         margin: 0 auto;
@@ -316,7 +296,7 @@
 
     img {
         display: none;
-        width: 50%;
+        width: 88%;
         border-radius: 30px;
         box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
         margin: 0 auto;
@@ -335,29 +315,109 @@
         padding: 1em 0;
         border-radius: 30px;
         border: 10px;
-        width: 25%;
+        width: 43%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin-bottom: 40px;
+        animation: background;
+        transition: transform 0.1s;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1800px) {
+    img.dailyImage {
+        display: none;
+        max-height: 450px;
+        width: 80%;
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 150px;
+        user-select: none;
+        -webkit-user-select: none;
+        animation: fade-in 1s ease-out;
+    }
+
+    img {
+        display: none;
+        max-height: 450px;
+        width: 80%;
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        user-select: none;
+        -webkit-user-select: none;
+        animation: fade-in 1s ease-out;
+    }
+
+    .button1 {
+        background-color: #555;
+        color:#ffffff;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        padding: 1em 0;
+        border-radius: 30px;
+        border: 10px;
+        width: 39%;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         margin-bottom: 50px;
         animation: background;
         transition: transform 1s;
     }
 
-    /* Button animation for computers */
-    .button1:hover {
-        background: #777;
-        transition: 1s;
-        transform: scale(0.98);
+    .button1:first-child {
+        margin-right: 11px;
     }
+}
 
-    footer {
-        background-color: #333;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+@media (min-width: 1801px) {
+    img.dailyImage {
+        display: none;
+        max-height: 800px;
+        width: 90%;
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 150px;
         user-select: none;
         -webkit-user-select: none;
+        animation: fade-in 1s ease-out;
+    }
+
+    img {
+        display: none;
+        max-height: 800px;
+        width: 90%;
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        user-select: none;
+        -webkit-user-select: none;
+        animation: fade-in 1s ease-out;
+    }
+
+    .button1 {
+        background-color: #555;
+        color:#ffffff;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        padding: 1em 0;
+        border-radius: 30px;
+        border: 10px;
+        width: 44%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin-bottom: 50px;
+        animation: background;
+        transition: transform 1s;
+    }
+
+    .button1:first-child {
+        margin-right: 30px;
     }
 }
 
