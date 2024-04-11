@@ -105,3 +105,22 @@ document.getElementById('imagem' + i);
         }  
     }
 }
+
+const scrollToTopBtn =
+document.getElementById("scrollToTopBtn");
+const scrollTriggerHeight = 350;
+
+window.addEventListener("scroll", () => {
+    if (document.body.scrollTop > scrollTriggerHeight ||
+document.documentElement.scrollTop >
+scrollTriggerHeight) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+});
+
+scrollToTopBtn.addEventListener("click", () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
