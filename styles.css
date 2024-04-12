@@ -155,7 +155,7 @@
     }
 
     #scrollToTopBtn:active {
-        background: #888;
+        background: #3399ff;
         transition: 0.1s;
         transform: scale(0.98);
     }
@@ -274,7 +274,7 @@
     }
 
     #scrollToTopBtn:hover {
-        background: #888;
+        background: #3399ff;
         transition: 1s;
         transform: scale(0.98);
     }
@@ -340,10 +340,11 @@
         bottom: 20px;
         right: 20px;
         z-index: 9998;
-        background-color: #666;
+        background-color: #007bff;
         color: #ffffff;
         border: none;
         border-radius: 50%;
+        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
         width: 50px;
         height: 50px;
         font-size: 20px;
@@ -407,10 +408,11 @@
         bottom: 20px;
         right: 20px;
         z-index: 9998;
-        background-color: #666;
+        background-color: #007bff;
         color: #ffffff;
         border: none;
         border-radius: 50%;
+        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
         width: 50px;
         height: 50px;
         font-size: 20px;
@@ -474,10 +476,11 @@
         bottom: 20px;
         right: 20px;
         z-index: 9998;
-        background-color: #666;
+        background-color: #007bff;
         color: #ffffff;
         border: none;
         border-radius: 50%;
+        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
         width: 50px;
         height: 50px;
         font-size: 20px;
@@ -525,6 +528,10 @@ p.footer {
 .carousel {
     display: block;
     overflow: visible;
+}
+
+#scrollToTopBtn {
+    bottom: 13%;
 }
 
 /* Initial image */
