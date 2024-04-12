@@ -108,7 +108,7 @@ document.getElementById('imagem' + i);
 
 const scrollToTopBtn =
 document.getElementById("scrollToTopBtn");
-const scrollTriggerHeight = 350;
+const scrollTriggerHeight = 300;
 
 window.addEventListener("scroll", () => {
     if (document.body.scrollTop > scrollTriggerHeight ||
