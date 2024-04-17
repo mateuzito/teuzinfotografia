@@ -500,6 +500,7 @@
 h1 {
     color: #a8a8a8;
     font-family: "Playfair Display", serif;
+    animation: animation-h1 2s ease-in;
 }
 
 h2 {
@@ -507,6 +508,7 @@ h2 {
     font-family: "Roboto", sans-serif;
     font-size: 50px;
     user-select: none;
+    animation: animation-h2 2s ease-in;
 }
 
 h3 {
@@ -514,6 +516,7 @@ h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 40px;
     user-select: none;
+    animation: animation-h3 1s ease;
 }
 
 p.footer {
@@ -557,6 +560,34 @@ a {
 
     to {
         opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes animation-h1 {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animation-h2 {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animation-h3 {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
         transform: translateY(0);
     }
 }

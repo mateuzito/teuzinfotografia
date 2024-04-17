@@ -289,12 +289,14 @@
 h1 {
     color: #a8a8a8;
     font-family: "Playfair Display", serif;
+    animation: animation-h1 2s ease-in;
 }
 
 ion-icon {
     color: #d3d3d3;
     height: 50px;
     width: 50px;
+    animation: animation-ion-icon 1s ease;
 }
 
 p.footer {
@@ -307,4 +309,22 @@ a {
     color: #6f6969;
     font-family: "Roboto", sans-serif;
     text-decoration: none;
+}
+
+@keyframes animation-h1 {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animation-ion-icon {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
