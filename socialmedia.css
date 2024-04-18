@@ -288,8 +288,9 @@
 /* Website content */
 h1 {
     color: #a8a8a8;
-    font-family: "Playfair Display", serif;
-    animation: animation-h1 2s ease-in;
+    font-family: "MonteCarlo", cursive;
+    font-weight: 400;
+    animation: animation-h1 1s ease-in;
 }
 
 ion-icon {

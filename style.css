@@ -499,8 +499,9 @@
 /* Website content */
 h1 {
     color: #a8a8a8;
-    font-family: "Playfair Display", serif;
-    animation: animation-h1 2s ease-in;
+    font-family: "MonteCarlo", cursive;
+    font-weight: 400;
+    animation: animation-h1 1s ease-in;
 }
 
 h2 {
@@ -508,7 +509,7 @@ h2 {
     font-family: "Roboto", sans-serif;
     font-size: 50px;
     user-select: none;
-    animation: animation-h2 2s ease-in;
+    animation: animation-h2 1s ease-in;
 }
 
 h3 {
