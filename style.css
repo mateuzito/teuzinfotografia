@@ -563,6 +563,7 @@ h1 {
     font-family: "MonteCarlo", cursive;
     font-weight: 400;
     animation: animation-h1 1s ease-in;
+    animation-delay: 5s;
 }
 
 h2 {
@@ -571,6 +572,7 @@ h2 {
     font-size: 50px;
     user-select: none;
     animation: animation-h2 1s ease-in;
+    animation-delay: 5s;
 }
 
 h3 {
@@ -579,6 +581,7 @@ h3 {
     font-size: 40px;
     user-select: none;
     animation: animation-h3 1s ease;
+    animation-delay: 5s;
 }
 
 p.footer {
