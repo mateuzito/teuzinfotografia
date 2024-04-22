@@ -55,6 +55,12 @@ botoes.forEach(function(botao) {
     });
 });
 
+/* Onload function */
+window.onload = function() {
+    showDailyImage();
+    hideLoader();
+};
+
 /* Photo of the day function */
 function showDailyImage() {
     const images = document.querySelectorAll('.dailyImage');
@@ -70,7 +76,10 @@ function showDailyImage() {
     });
 }
 
-window.onload = showDailyImage;
+/* Loader hiding function */
+function hideLoader() {
+    document.getElementById('loader-wrapper').style.display = 'none';
+}
 
 /* Image display function */
 let imagemAtual = 1;
