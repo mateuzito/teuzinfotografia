@@ -496,6 +496,11 @@ p.footer {
 	ion-icon {
 		width: 75px;
 		height: 75px;
+		transition: transform 0.9s;
+	}
+
+	ion-icon:hover {
+		transform: scale(0.9);
 	}
 
 	footer {
@@ -583,6 +588,11 @@ p.footer {
 	ion-icon {
 		width: 80px;
 		height: 80px;
+		transition: transform 0.9s;
+	}
+
+	ion-icon:hover {
+		transform: scale(0.9);
 	}
 
 	footer {

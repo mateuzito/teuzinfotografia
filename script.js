@@ -1,16 +1,26 @@
 // Sidebar function
 document.addEventListener("DOMContentLoaded", function () {
-	var sidebar = document.querySelectorAll(".sidebar");
-	var overlay = document.querySelectorAll(".overlay");
-	var menuBtn = document.querySelectorAll(".menu-btn");
+	let sidebar = document.querySelectorAll(".sidebar");
+	let overlay = document.querySelectorAll(".overlay");
+	let menuBtn = document.querySelectorAll(".menu-btn");
+
+	function handleResize() {
+		if (window.innerWidth >= 1200) {
+			// Ensure the sidebar is closed and the menu button hidden on large screens
+			closeSidebar();
+		}
+	}
 
 	function openSidebar() {
-		sidebar.forEach(function (sidebar) {
-			sidebar.style.right = "0";
-		});
-		overlay.forEach(function (overlay) {
-			overlay.style.display = "block";
-		});
+		if (window.innerWidth < 1200) {
+			// Opens only if the screen is smaller than 1200px
+			sidebar.forEach(function (sidebar) {
+				sidebar.style.right = "0";
+			});
+			overlay.forEach(function (overlay) {
+				overlay.style.display = "block";
+			});
+		}
 	}
 
 	function closeSidebar() {
@@ -22,34 +32,27 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}
 
-	function toggleSidebar() {
-		sidebar.forEach(function (sidebar) {
-			if (sidebar.style.right === "0px") {
-				closeSidebar();
-			} else {
-				openSidebar();
-			}
-		});
-	}
-
 	menuBtn.forEach(function (menuBtn) {
-		menuBtn.addEventListener("click", toggleSidebar);
+		menuBtn.addEventListener("click", openSidebar);
 	});
 
 	overlay.forEach(function (overlay) {
 		overlay.addEventListener("click", closeSidebar);
 	});
+
+	// Handle window resizing
+	window.addEventListener("resize", handleResize);
 });
 
 // Sidebar button rotation function
-var botoes = document.querySelectorAll(".menu-btn");
+let button = document.querySelectorAll(".menu-btn");
 
-botoes.forEach(function (botao) {
-	botao.addEventListener("click", function () {
-		botao.classList.add("rotate-button");
+button.forEach(function (rotateBtn) {
+	rotateBtn.addEventListener("click", function () {
+		rotateBtn.classList.add("rotate-button");
 
 		setTimeout(function () {
-			botao.classList.remove("rotate-button");
+			rotateBtn.classList.remove("rotate-button");
 		}, 500);
 	});
 });
@@ -118,6 +121,7 @@ function atualizarImagem() {
 	}
 }
 
+// Top button
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 const scrollTriggerHeight = 300;
 

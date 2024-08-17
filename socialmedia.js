@@ -1,8 +1,8 @@
-/* Sidebar function */
+// Sidebar function
 document.addEventListener("DOMContentLoaded", function () {
-	var sidebar = document.querySelectorAll(".sidebar");
-	var overlay = document.querySelectorAll(".overlay");
-	var menuBtn = document.querySelectorAll(".menu-btn");
+	let sidebar = document.querySelectorAll(".sidebar");
+	let overlay = document.querySelectorAll(".overlay");
+	let menuBtn = document.querySelectorAll(".menu-btn");
 
 	function handleResize() {
 		if (window.innerWidth >= 1200) {
@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	window.addEventListener("resize", handleResize);
 });
 
-/* Sidebar button rotation function */
-var button = document.querySelectorAll(".menu-btn");
+// Sidebar button rotation function
+let button = document.querySelectorAll(".menu-btn");
 
 button.forEach(function (rotateBtn) {
 	rotateBtn.addEventListener("click", function () {

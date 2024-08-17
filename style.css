@@ -128,7 +128,7 @@ h3 {
 .loader {
 	display: block;
 	position: relative;
-	margin: auto;
+	margin: 0 auto;
 	border: 10px solid transparent;
 	border-radius: 50%;
 	border-top: 10px solid #1a2733;
@@ -668,13 +668,13 @@ p.footer {
 	.button1 {
 		width: 30%;
 		animation: background;
-		transition: transform 0.1s;
+		transition: transform 0.5s;
 		margin-bottom: 15%;
 	}
 
 	.button1:hover {
 		background: #213545;
-		transition: 0.1s;
+		transition: 0.5s;
 		transform: scale(0.98);
 	}
 
@@ -777,13 +777,13 @@ p.footer {
 	.button1 {
 		width: 30%;
 		animation: background;
-		transition: transform 0.1s;
+		transition: transform 0.5s;
 		margin-bottom: 15%;
 	}
 
 	.button1:hover {
 		background: #213545;
-		transition: 0.1s;
+		transition: 0.5s;
 		transform: scale(0.98);
 	}
 
