@@ -6,11 +6,11 @@ Bem-vindo ao **Teuzin Fotografia**! Este projeto é uma vitrine onde posso compa
 
 ## 📷 Projeto
 
-**Mobile**![Celular](.github/iPhone-13-PRO-teuzinfotografia.vercel.app.png)
+**Mobile**![Celular](.github/iPhone-13-PRO-127.0.0.1.png)
 
 ##
 
-**Desktop**![PC](.github/Macbook-Air-teuzinfotografia.vercel.app.png)
+**Desktop**![PC](.github/Macbook-Air-127.0.0.1.png)
 
 ## 🚀 Tecnologias
 
