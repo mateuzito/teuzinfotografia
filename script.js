@@ -90,7 +90,7 @@ function showDailyImage() {
 
 // Image display function
 let imagemAtual = 1;
-const totalImagens = 16;
+const totalImagens = 23;
 
 function anterior() {
 	if (imagemAtual > 1) {
