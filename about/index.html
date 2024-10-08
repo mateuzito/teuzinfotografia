@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="socialmedia.css" />
+		<link rel="stylesheet" href="style.css" />
 
 		<!-- HEAD ICON -->
 		<link rel="icon" href="/images/logo-teuzin-fotografia.png" type="image/x-icon" />
@@ -32,15 +32,17 @@
 		<!-- VERCEL ANALYSIS END -->
 	</head>
 	<body>
+		<!-- HEADER -->
 		<header>
 			<a href="/index.html"><h1>Teuzin Fotografia</h1></a>
 			<div class="desktop-navigation-bar">
 				<a href="/index.html">Início</a>
-				<a href="/about/about.html">Sobre</a>
-				<a href="/socialmedia/socialmedia.html">Redes Sociais</a>
+				<a href="/about/index.html">Sobre</a>
+				<a href="/socialmedia/index.html">Redes Sociais</a>
 			</div>
 			<button class="menu-btn">&#9776;</button>
 		</header>
+		<!-- HEADER END -->
 
 		<!-- SIDEBAR -->
 		<nav class="sidebar">
@@ -49,10 +51,10 @@
 					<a href="/index.html">Início</a>
 				</li>
 				<li>
-					<a href="/about/about.html">Sobre</a>
+					<a href="/about/index.html">Sobre</a>
 				</li>
 				<li>
-					<a href="/socialmedia/socialmedia.html">Redes Sociais</a>
+					<a href="/socialmedia/index.html">Redes Sociais</a>
 				</li>
 				<div class="align-left">
 					<p>
@@ -64,36 +66,47 @@
 		</nav>
 		<!-- SIDEBAR END -->
 
-		<!-- WEBSITE CONTENT -->
+		<!-- WEBSITE CONTENT-->
 		<div class="content">
-			<h2>Redes Sociais</h2>
-			<!-- INSTAGRAM ICON -->
+			<h2>Sobre</h2>
+
+			<!-- PHOTO -->
 			<div class="center">
-				<h3>Instagram</h3>
-				<a href="https://instagram.com/teuzinfotografia?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
-					<ion-icon name="logo-instagram"></ion-icon>
-				</a>
+				<img src="/images/Minha Foto.jpeg" oncontextmenu="return false" />
 			</div>
-			<!-- INSTAGRAM ICON END -->
+			<!-- PHOTO END -->
+
+			<h3>
+				<span style="color: #1a2733">T</span>euzin <span style="color: #1a2733">F</span>otografia
+			</h3>
+
+			<!-- TEXT -->
+			<main>
+				<p class="text">
+					Meu nome é Mateus, mas muitos me conhecem simplesmente como Teuzin. Sou um
+					<b>fotógrafo amador</b> apaixonado principalmente por capturar a beleza estonteante da
+					<b>natureza</b> e a singularidade dos <b>animais</b>. Minha jornada com a fotografia
+					começou aos 12 anos, quando tirei minha primeira foto de uma <b>paisagem</b>. Após
+					<b>editar</b> aquela imagem e ver o resultado transformado, fiquei encantado. Foi nesse
+					momento que eu decidi: fotografar paisagens se tornaria o meu <b>hobby</b> favorito! Desde
+					então, tenho me dedicado a aperfeiçoar minha técnica e a capturar momentos que, através
+					das lentes, revelam a arte escondida no mundo natural.
+				</p>
+			</main>
+			<!-- TEXT END -->
 		</div>
 		<!-- WEBSITE CONTENT END -->
 
+		<!-- FOOTER -->
 		<footer>
 			<p class="footer">&copy; 2024 Teuzin Fotografia. Todos os direitos reservados.</p>
 		</footer>
+		<!-- FOOTER END -->
 
 		<!-- OVERLAY -->
 		<div class="overlay"></div>
 		<!-- OVERLAY END -->
 
-		<!-- ICON CODE -->
-		<script
-			type="module"
-			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-		></script>
-		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-		<!-- ICON CODE END -->
-
-		<script src="socialmedia.js"></script>
+		<script src="script.js"></script>
 	</body>
 </html>
