@@ -440,6 +440,11 @@ p.footer {
 
 	h1 {
 		font-size: 45px;
+		transition: color 0.9s ease;
+	}
+
+	h1:hover {
+		color: #068ff2;
 	}
 
 	.desktop-navigation-bar {
@@ -532,6 +537,11 @@ p.footer {
 
 	h1 {
 		font-size: 45px;
+		transition: color 0.9s ease;
+	}
+
+	h1:hover {
+		color: #068ff2;
 	}
 
 	.desktop-navigation-bar {
