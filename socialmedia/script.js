@@ -1,3 +1,10 @@
+const validRoutes = ["/", "/index.html", "/about/index.html", "/socialmedia/index.html"];
+const currentRoute = window.location.pathname;
+
+if (!validRoutes.includes(currentRoute)) {
+	window.location.href = "/404.html";
+}
+
 // Sidebar function
 document.addEventListener("DOMContentLoaded", function () {
 	let sidebar = document.querySelectorAll(".sidebar");
