@@ -14,6 +14,10 @@ header {
 	-webkit-user-select: none;
 }
 
+img.ampliada {
+	transform: scale(1.5);
+}
+
 h1 {
 	color: #fefdfe;
 	font-family: "MonteCarlo", cursive;
