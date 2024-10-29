@@ -188,6 +188,8 @@ img {
 
 .button2 {
 	display: none;
+	align-items: center;
+	justify-content: center;
 	position: fixed;
 	z-index: 2;
 	background-color: #068ff2;
@@ -197,6 +199,10 @@ img {
 	box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.3);
 	width: 50px;
 	height: 50px;
+}
+
+.button2 ion-icon {
+	margin: 0;
 }
 
 footer {
@@ -679,6 +685,7 @@ p.footer {
 		animation: background;
 		transition: transform 0.5s;
 		margin-bottom: 15%;
+		cursor: pointer;
 	}
 
 	.button1:hover {
@@ -693,6 +700,7 @@ p.footer {
 		font-size: 25px;
 		animation: background;
 		transition: transform 0.1s;
+		cursor: pointer;
 	}
 
 	.button2:hover {
@@ -793,6 +801,7 @@ p.footer {
 		animation: background;
 		transition: transform 0.5s;
 		margin-bottom: 15%;
+		cursor: pointer;
 	}
 
 	.button1:hover {
@@ -808,6 +817,7 @@ p.footer {
 		padding: 1px 1px 1px 1px;
 		animation: background;
 		transition: transform 0.1s;
+		cursor: pointer;
 	}
 
 	.button2:hover {

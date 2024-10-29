@@ -138,7 +138,7 @@ window.addEventListener("scroll", () => {
 		document.body.scrollTop > scrollTriggerHeight ||
 		document.documentElement.scrollTop > scrollTriggerHeight
 	) {
-		scrollToTopBtn.style.display = "block";
+		scrollToTopBtn.style.display = "flex";
 	} else {
 		scrollToTopBtn.style.display = "none";
 	}
