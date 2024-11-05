@@ -76,20 +76,22 @@ function showDailyImage() {
 	loader.style.display = "block";
 	const images = document.querySelectorAll(".dailyImage");
 	const today = new Date();
-	const seed = today.getFullYear() * 1000 + today.getMonth() * 100 + today.getDate();
-	const random = (seed * 9301 + 49297) % 233280;
-	const randomIndex = Math.floor((random / 233280) * images.length);
-
-	images.forEach((img) => {
+	const startOfYear = new Date(today.getFullYear(), 0, 0);
+	const diff = today - startOfYear;
+	const oneDay = 1000 * 60 * 60 * 24;
+	const dayOfYear = Math.floor(diff / oneDay);
+	
+	const imageIndex = dayOfYear % images.length;
+	images.forEach((img, index) => {
 		img.style.display = "none";
 	});
 
-	images[randomIndex].style.display = "block";
-	images[randomIndex].onload = function () {
+	images[imageIndex].style.display = "block";
+	images[imageIndex].onload = function () {
 		loader.style.display = "none";
 	};
 
-	if (images[randomIndex].complete) {
+	if (images[imageIndex].complete) {
 		loader.style.display = "none";
 	}
 }
