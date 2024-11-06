@@ -129,6 +129,26 @@ function atualizarImagem() {
 	}
 }
 
+// Função para abrir o lightbox com a imagem atualmente visível
+function openLightbox() {
+	const lightbox = document.getElementById("lightbox");
+	const lightboxImg = document.getElementById("lightbox-img");
+  
+	// Seleciona a imagem ativa no carrossel
+	const imagemVisivel = document.getElementById("imagem" + imagemAtual);
+  
+	// Verificação: mostra o src no console para garantir que temos o caminho correto
+	if (imagemVisivel && imagemVisivel.src) {
+	  lightboxImg.src = imagemVisivel.src;
+	  lightbox.style.display = "flex"; // Exibe o lightbox
+	}
+}
+  
+function closeLightbox() {
+	const lightbox = document.getElementById("lightbox");
+	lightbox.style.display = "none"; // Oculta o lightbox
+}
+  
 // Top button
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 const scrollTriggerHeight = 300;
