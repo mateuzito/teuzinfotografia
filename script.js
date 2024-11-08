@@ -141,12 +141,16 @@ function openLightbox() {
 	if (imagemVisivel && imagemVisivel.src) {
 	  lightboxImg.src = imagemVisivel.src;
 	  lightbox.style.display = "flex"; // Exibe o lightbox
+
+	  document.body.classList.add("no-scroll");
 	}
 }
   
 function closeLightbox() {
 	const lightbox = document.getElementById("lightbox");
 	lightbox.style.display = "none"; // Oculta o lightbox
+
+	document.body.classList.remove("no-scroll");
 }
   
 // Top button
