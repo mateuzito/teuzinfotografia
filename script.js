@@ -80,7 +80,7 @@ function showDailyImage() {
 	const diff = today - startOfYear;
 	const oneDay = 1000 * 60 * 60 * 24;
 	const dayOfYear = Math.floor(diff / oneDay);
-	
+
 	const imageIndex = dayOfYear % images.length;
 	images.forEach((img, index) => {
 		img.style.display = "none";
@@ -98,7 +98,7 @@ function showDailyImage() {
 
 // Image display function
 let imagemAtual = 1;
-const totalImagens = 23;
+const totalImagens = 25;
 
 function anterior() {
 	if (imagemAtual > 1) {
@@ -133,26 +133,26 @@ function atualizarImagem() {
 function openLightbox() {
 	const lightbox = document.getElementById("lightbox");
 	const lightboxImg = document.getElementById("lightbox-img");
-  
+
 	// Seleciona a imagem ativa no carrossel
 	const imagemVisivel = document.getElementById("imagem" + imagemAtual);
-  
+
 	// Verificação: mostra o src no console para garantir que temos o caminho correto
 	if (imagemVisivel && imagemVisivel.src) {
-	  lightboxImg.src = imagemVisivel.src;
-	  lightbox.style.display = "flex"; // Exibe o lightbox
+		lightboxImg.src = imagemVisivel.src;
+		lightbox.style.display = "flex"; // Exibe o lightbox
 
-	  document.body.classList.add("no-scroll");
+		document.body.classList.add("no-scroll");
 	}
 }
-  
+
 function closeLightbox() {
 	const lightbox = document.getElementById("lightbox");
 	lightbox.style.display = "none"; // Oculta o lightbox
 
 	document.body.classList.remove("no-scroll");
 }
-  
+
 // Top button
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 const scrollTriggerHeight = 300;

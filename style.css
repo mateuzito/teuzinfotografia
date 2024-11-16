@@ -98,12 +98,13 @@ a {
 }
 
 .content {
+	text-align: center;
+	margin: 1em 0;
 	z-index: 1;
 }
 
 .gallery {
 	text-align: center;
-	margin: 1em 0;
 }
 
 .emphasis {
@@ -189,6 +190,7 @@ img {
 #lightbox img {
 	display: block;
 	border-radius: 0px;
+	animation: none;
 	cursor: zoom-out;
 }
 

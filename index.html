@@ -5,46 +5,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
 
+		<!-- HEAD ICON -->
 		<link rel="icon" href="images/logo-teuzin-fotografia.png" type="image/x-icon" />
 
+		<!-- FONTS -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=MonteCarlo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-			rel="stylesheet"
-		/>
+
+		<!-- ICON LINK -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 		<title>Teuzin Fotografia</title>
-
-		<!-- VERCEL ANALYSIS -->
-		<script>
-			window.va =
-				window.va ||
-				function () {
-					(window.vaq = window.vaq || []).push(arguments);
-				};
-		</script>
-		<script defer src="/_vercel/insights/script.js"></script>
 	</head>
 	<body>
+		<!-- HEADER -->
 		<header>
 			<a href="/"><h1>Teuzin Fotografia</h1></a>
 			<div class="desktop-navigation-bar">
@@ -55,6 +37,7 @@
 			<button class="menu-btn">&#9776;</button>
 		</header>
 
+		<!-- SIDEBAR -->
 		<nav class="sidebar">
 			<ul>
 				<li>
@@ -69,18 +52,23 @@
 				<div class="align-left">
 					<p>
 						Desenvolvido por
-						<a href="https://github.com/mateuzito" target="_blank">Mateus Silva</a>
+						<a href="https://github.com/mateuzito" target="_blank" rel="noopener noreferrer"
+							>Mateus Silva</a
+						>
 					</p>
 				</div>
 			</ul>
 		</nav>
 
+		<!-- WEB SITE CONTENT -->
 		<div class="content">
 			<section class="gallery">
 				<div class="emphasis">
+					<!-- PHOTO OF THE DAY -->
 					<h2>Seja Bem Vindo!</h2>
 					<h3>Foto do Dia</h3>
 					<div class="loader"></div>
+					<!-- LOADING PHOTO -->
 					<img
 						class="dailyImage"
 						src="images/PSX_20221206_105208.jpeg"
@@ -219,8 +207,21 @@
 						alt="Imagem do Dia 23"
 						oncontextmenu="return false"
 					/>
+					<img
+						class="dailyImage"
+						src="images/PSX_20240928_181241.jpeg"
+						alt="Imagem do Dia 24"
+						oncontextmenu="return false"
+					/>
+					<img
+						class="dailyImage"
+						src="images/PSX_20241115_105749.jpeg"
+						alt="Imagem do Dia 25"
+						oncontextmenu="return false"
+					/>
 				</div>
 
+				<!-- PHOTO CAROUSEL -->
 				<div class="carousel">
 					<h3>Galeria</h3>
 					<img
@@ -384,39 +385,51 @@
 						oncontextmenu="return false"
 						onclick="openLightbox(this)"
 					/>
-				</div>
-				
-				<!-- Lightbox Container -->
-				<div id="lightbox" onclick="closeLightbox()">
-					<span class="close-btn" onclick="closeLightbox()">×</span>
-					<img id="lightbox-img" src="" alt="Imagem Ampliada"
-					oncontextmenu="return false">
-				</div>
-
-				<div class="button-container">
-					<button class="button1" onclick="anterior()">Anterior</button>
-					<button class="button1" onclick="proximo()">Próximo</button>
-				</div>
-
-				<div class="buttonTop-container">
-					<button class="button2" id="scrollToTopBtn">
-						<ion-icon name="arrow-up-outline"></ion-icon>
-					</button>
+					<img
+						src="images/PSX_20240928_181241.jpeg"
+						alt="Foto 24"
+						id="imagem24"
+						oncontextmenu="return false"
+						onclick="openLightbox(this)"
+					/>
+					<img
+						src="images/PSX_20241115_105749.jpeg"
+						alt="Foto 25"
+						id="imagem25"
+						oncontextmenu="return false"
+						onclick="openLightbox(this)"
+					/>
 				</div>
 			</section>
+
+			<!-- LIGHTBOX CONTAINER -->
+			<div id="lightbox" onclick="closeLightbox()">
+				<span class="close-btn" onclick="closeLightbox()"
+					><ion-icon name="close-outline"></ion-icon
+				></span>
+				<img id="lightbox-img" src="" alt="Imagem Ampliada" oncontextmenu="return false" />
+			</div>
+
+			<!-- PHOTO CHANGE BUTTONS -->
+			<div class="button-container">
+				<button class="button1" onclick="anterior()">Anterior</button>
+				<button class="button1" onclick="proximo()">Próximo</button>
+			</div>
+			<!-- GO TO TOP BUTTON -->
+			<div class="buttonTop-container">
+				<button class="button2" id="scrollToTopBtn">
+					<ion-icon name="arrow-up-outline"></ion-icon>
+				</button>
+			</div>
 		</div>
 
+		<!-- FOOTER -->
 		<footer>
 			<p class="footer">&copy; 2024 Teuzin Fotografia. Todos os direitos reservados.</p>
 		</footer>
 
+		<!-- OVERLAY -->
 		<div class="overlay"></div>
-
-		<script
-			type="module"
-			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-		></script>
-		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 		<script src="script.js"></script>
 	</body>
