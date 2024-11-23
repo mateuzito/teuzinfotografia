@@ -168,11 +168,6 @@ img {
 	cursor: zoom-in;
 }
 
-/* Initial image */
-#imagem1 {
-	display: block;
-}
-
 #lightbox {
 	display: none; /* Começa oculto */
 	position: fixed;

@@ -98,7 +98,8 @@ function showDailyImage() {
 
 // Image display function
 let imagemAtual = 1;
-const totalImagens = 25;
+const imagens = document.querySelectorAll("[id^='imagem']");
+const totalImagens = imagens.length;
 
 function anterior() {
 	if (imagemAtual > 1) {
@@ -119,15 +120,16 @@ function proximo() {
 }
 
 function atualizarImagem() {
-	for (let i = 1; i <= totalImagens; i++) {
-		const imagem = document.getElementById("imagem" + i);
-		if (i === imagemAtual) {
+	imagens.forEach((imagem, index) => {
+		if (index + 1 === imagemAtual) {
 			imagem.style.display = "block";
 		} else {
 			imagem.style.display = "none";
 		}
-	}
+	});
 }
+
+atualizarImagem();
 
 // Função para abrir o lightbox com a imagem atualmente visível
 function openLightbox() {
