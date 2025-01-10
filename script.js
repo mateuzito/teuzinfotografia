@@ -68,12 +68,11 @@ button.forEach(function (rotateBtn) {
 // Onload function
 window.onload = function () {
 	showDailyImage();
+	checkImagesLoaded();
 };
 
 // Photo of the day function
 function showDailyImage() {
-	const loader = document.querySelector(".loader");
-	loader.style.display = "block";
 	const images = document.querySelectorAll(".dailyImage");
 	const today = new Date();
 	const startOfYear = new Date(today.getFullYear(), 0, 0);
@@ -87,12 +86,58 @@ function showDailyImage() {
 	});
 
 	images[imageIndex].style.display = "block";
-	images[imageIndex].onload = function () {
-		loader.style.display = "none";
-	};
+}
 
-	if (images[imageIndex].complete) {
+// Check if all images are loaded
+function checkImagesLoaded() {
+	const images = document.querySelectorAll("img");
+	let loadedImagesCount = 0;
+
+	images.forEach((img) => {
+		if (img.complete) {
+			loadedImagesCount++;
+		} else {
+			img.onload = () => {
+				loadedImagesCount++;
+				if (loadedImagesCount === images.length) {
+					hideLoader();
+				}
+			};
+		}
+	});
+
+	if (loadedImagesCount === images.length) {
+		hideLoader();
+	}
+}
+
+// Hide the loader
+function hideLoader() {
+	const loader = document.getElementById("page-loader");
+	if (loader) {
 		loader.style.display = "none";
+		document.body.classList.remove("no-scroll");
+		document.body.classList.add("loaded");
+		triggerAnimations();
+	}
+}
+
+// Trigger animations
+function triggerAnimations() {
+	const h1 = document.querySelector("h1");
+	const h2 = document.querySelector("h2");
+	const image = document.querySelector("img");
+
+	if (h1) {
+		h1.style.animation = "animation-h1 1s ease-in";
+	}
+
+	if (h2) {
+		h2.style.animation = "animation-h2 1s ease-in";
+	}
+
+	if (image) {
+		image.style.animation = "fade-in 1s ease-out";
 	}
 }
 
@@ -132,16 +177,12 @@ function atualizarImagem() {
 atualizarImagem();
 
 // Função para abrir o lightbox com a imagem atualmente visível
-function openLightbox() {
+function openLightbox(imageElement) {
 	const lightbox = document.getElementById("lightbox");
 	const lightboxImg = document.getElementById("lightbox-img");
 
-	// Seleciona a imagem ativa no carrossel
-	const imagemVisivel = document.getElementById("imagem" + imagemAtual);
-
-	// Verificação: mostra o src no console para garantir que temos o caminho correto
-	if (imagemVisivel && imagemVisivel.src) {
-		lightboxImg.src = imagemVisivel.src;
+	if (imageElement && imageElement.src) {
+		lightboxImg.src = imageElement.src;
 		lightbox.style.display = "flex"; // Exibe o lightbox
 
 		document.body.classList.add("no-scroll");
